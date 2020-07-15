@@ -32,8 +32,8 @@ class CreatePlaylist:
 
     return response_json["id"]
 
-  def getSpotifyUri(self):
-    pass
+  def getSpotifyUri(self, song_name, artist):
+    query = "https://api.spotify.com/v1/search?q=track:{}%20artist:{}&type=track" -H "Authorization: Bearer {your access token}"
 
   def addSongToPlaylist(self):
     pass
